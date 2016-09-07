@@ -1,0 +1,33 @@
+{
+  "name": "rfd-scrapper-cli",
+  "version": "1.0.0",
+  "description": "Read the lastest posts on redflagdeals from your terminal",
+  "bin": {
+    "rfd-scrapper": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alferov/rfd-scrapper-cli.git"
+  },
+  "keywords": [
+    "redflagdeals",
+    "rfd",
+    "scrapper",
+    "cli"
+  ],
+  "author": "Philipp Alferov <philipp.alferov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alferov/rfd-scrapper-cli/issues"
+  },
+  "homepage": "https://github.com/alferov/rfd-scrapper-cli",
+  "dependencies": {
+    "rfd-scrapper": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=4.4.5"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.3"
+  }
+}
