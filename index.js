@@ -5,7 +5,7 @@ const chalk = require('chalk');
 const rfdScrapper = require('rfd-scrapper');
 const cli = meow(`
   Usage
-    $ rfd-scrapper [--pages=<number>]
+    $ rfd-scrapper [--limit=<number>]
   Flags
     --limit=<number> Limit number of returned entries
 `);
