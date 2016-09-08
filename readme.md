@@ -1,4 +1,7 @@
 # rfd-scrapper-cli
+
+![rfd-scrapper-cli](media/screen.png)
+
 > Read the lastest posts on redflagdeals from your terminal
 
 ## Installation
