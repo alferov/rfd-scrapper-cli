@@ -10,18 +10,15 @@ const cli = meow(`
     --limit=<number> Limit number of returned entries
 `);
 const limit = cli.flags.limit || 10;
+const entriesPerPage = 30;
+const getNumberOfPages = (limit, entrsPerPg) => Math.ceil(limit / entrsPerPg);
 
-function getNumberOfPages(limit) {
-  const entriesPerPage = 30;
-  return Math.ceil(limit / entriesPerPage);
-}
-
-rfdScrapper({ limit: getNumberOfPages(limit) })
+rfdScrapper({ limit: getNumberOfPages(limit, entriesPerPage) })
   .then((items) => {
     items
       .slice(0, limit)
       .forEach((item, index) => {
-        console.log(chalk.green.bold(item.title));
+        console.log(`${chalk.green.bold(item.title)}`);
         console.log(item.url);
         console.log(`${item.created_at} \n`);
       });

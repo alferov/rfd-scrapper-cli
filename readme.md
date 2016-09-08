@@ -8,8 +8,8 @@ $ npm install rfd-scrapper-cli --global
 
 ## Usage
 ```sh
-  $ rfd-scrapper [--limit=<number>]
-    --limit=<number> Limit number of returned entries (default: 10)
+$ rfd-scrapper [--limit=<number>]
+  --limit=<number> Limit number of returned entries (default: 10)
 ```
 
 ## License
